@@ -2,6 +2,7 @@ package one.digitalinnovation.collection
 
 fun main(){
     val values = IntArray(5)
+    val values2 = intArrayOf(10,11,12,13,14,)//Não precisa delcarar o tamanho na instanciação
 
     values[0] = 1
     values[1] = 2
@@ -12,7 +13,7 @@ fun main(){
     for(valor in values){
         println(valor)
     }
-println("--------------------------------")
+    println("--------------------------------")
     values.forEach {
         println(it)
     }
@@ -21,4 +22,6 @@ println("--------------------------------")
         values[index] += 1
         println(values[index])
     }
+    println("--------------------------------")
+    values2.forEach { println(it) }
 }
